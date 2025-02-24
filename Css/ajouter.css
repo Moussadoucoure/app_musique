@@ -1,0 +1,19 @@
+#formulaire-ajouter{
+    text-align: center;
+    align-self: center;
+    padding-left: 2cm;
+    padding-right: 2cm;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 98vh;
+    background-color: grey;
+}
+
+.titre{
+    text-align: center;
+}

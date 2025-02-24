@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Double Tap - Manuel</title>
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="tap-container">
+        <div id="two" class="orange tap-area">
+          J'aime
+          <span id="star" data-value="0">☆</span>
+        </div>
+      </div>
+      <div id="output">> Les informations sur l'interaction apparaîtront ici.</div>
+    </div>
+
+    <script>
+      let lastTap = 0; // Stocke le timestamp du dernier tap
+
+      // Fonction pour gérer les taps
+      document.getElementById('two').addEventListener('click', function () {
+        const currentTime = new Date().getTime(); // Temps actuel en millisecondes
+        const tapDelay = 300; // Temps maximal entre deux taps pour un double-tap (en ms)
+
+        if (currentTime - lastTap < tapDelay) {
+          // Si l'intervalle est inférieur au délai, on détecte un double-tap
+          const starElement = document.getElementById('star');
+          starElement.innerHTML = "★"; // Marque l'étoile comme cochée
+          starElement.setAttribute('data-value', '1'); // Met à jour l'attribut data-value
+
+          afficherOutput("Double tap détecté !");
+        } else {
+          // Sinon, c'est juste un simple tap
+          afficherOutput("Simple tap détecté !");
+        }
+
+        lastTap = currentTime; // Met à jour le dernier tap
+      });
+
+      // Fonction pour afficher des informations
+      function afficherOutput(message) {
+        const output = document.getElementById('output');
+        output.innerHTML = "> " + message;
+      }
+    </script>
+  </body>
+</html>

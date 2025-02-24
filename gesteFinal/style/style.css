@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Met le fond derrière le contenu */
+
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+.music-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.music-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.music-item h2 {
+    margin: 0;
+    color: #333;
+}
+
+.music-item .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /* Espacement entre les éléments */
+    margin-bottom: 10px;
+}
+
+.music-item .info div {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.music-item .controls {
+    margin-top: 10px;
+}
+
+.music-item .controls a {
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.music-item .controls a:hover {
+    text-decoration: underline;
+}
+
+.fas.fa-music {
+    color: #0066cc; /* Couleur bleue */
+    margin-right: 10px; /* Espacement entre l'icône et le titre */
+    font-size: 1.5em; /* Taille de l'icône */
+}
+
+.music-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-frame {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.music-item h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.music-item .controls {
+    margin-top: 10px;
+}
+
+.music-item .controls a {
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.music-item .controls a:hover {
+    text-decoration: underline;
+}
+
+.music-item .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.music-item .info div {
+    font-size: 0.9em;
+    color: #666;
+}
+
+img {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.im {
+    text-align: center;
+    color: red;
+}
+
+.orange {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.tap-area {
+  user-select: none;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+span {
+  font-size: 24px;
+  margin-left: 10px;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de modification de musique</title>
+    <link rel="stylesheet" href="Css/modifier.css">
+</head>
+<body>
+    <div class="page">
+        <form id="formulaire-modifier"> 
+            <h1>Modification de la musique</h1>
+            <fieldset>
+                <legend>Musique</legend>
+                <div>
+                    <label for="musique-nom">Nom</label>
+                    <input type="text" id="musique-nom" value="Nom"/>
+                </div>
+                <div>
+                    <label for="musique-album">Album</label>
+                    <input type="text" id="musique-album" value="Album"/>
+                  </div>
+                <div>
+                    <label for="musique-auteur">Auteur</label>
+                    <input type="text" id="musique-auteur" value="Auteur"/>
+                </div>
+                <div>
+                    <label for="musique-duree">Durée</label>
+                    <input type="text" id="musique-duree" value="Durée"/>
+                </div>
+                <div>
+                    <label for="musique-type">Type</label>
+                    <input type="text" id="musique-type" value="Type"/>
+                </div>
+            </fieldset>
+            <input class="action" type="submit" id="enregistrer" value="Enregistrer les modification"/>
+            <a href="index.html" class="action">Annuler et revenir &agrave; la liste </a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Musiques</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Importation de GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <h1>Liste des Musiques</h1>
+    <img src="image/musique.jpeg" alt="img">
+
+    <div class="music-list">
+
+        <div class="music-item">
+            <div class="image-frame">
+                <img src="image/musique.jpeg" alt="Bohemian Rhapsody">
+            </div>
+            <div>
+                <h2><i class="fas fa-music"></i> Bohemian Rhapsody</h2>
+                <div class="controls">
+                    <a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ" target="_blank">Écouter sur YouTube</a>
+                    <a href="bohemian_rhapsody.mp3" download>Télécharger MP3</a>
+
+                     <div id="wrapper">
+                        <div id="tap-container">
+                            <div id="two" class="orange tap-area">
+
+                            <span id="star" data-value="0">☆</span>
+                            </div>
+                        </div>
+                    <div id="output"> </div>
+                    </div>
+
+                </div>
+                <div class="info">
+                    <div><strong>Artiste :</strong> Queen</div>
+                    <div><strong>Genre :</strong> Rock</div>
+                    <div><strong>Album :</strong> A Night at the Opera (1975)</div>
+                    <div><strong>Date de sortie :</strong> 1975</div>
+                </div>
+                <a href="modifier.html">modifier</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="im">
+        <a href="ajouter.html">ajouter</a>
+    </div>
+
+    </br>
+    </br>
+    </br>
+    <script>
+      let lastTap = 0;
+
+
+      document.getElementById('two').addEventListener('click', function () {
+        const currentTime = new Date().getTime();
+        const tapDelay = 300;
+
+        if (currentTime - lastTap < tapDelay) {
+
+          const starElement = document.getElementById('star');
+          starElement.innerHTML = "★";
+          starElement.setAttribute('data-value', '1');
+
+          afficherOutput("Ajouter aux favoris");
+        } else {
+
+          afficherOutput("Double clic pour ajouter aux favoris !");
+        }
+
+        lastTap = currentTime;
+      });
+
+
+      function afficherOutput(message) {
+        const output = document.getElementById('output');
+        output.innerHTML = "> " + message;
+      }
+    </script>
+    <script src="js/gsap.js"></script>
+</body>
+</html>

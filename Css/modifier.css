@@ -1,0 +1,101 @@
+/* Centrer la page et le formulaire */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #333; /* Fond gris foncé */
+    padding: 20px;
+    border-radius: 2rem; /* Coins arrondis pour le conteneur */
+}
+
+/* Style du formulaire */
+#formulaire-modifier {
+    width: 100%; /* Largeur ajustée pour être responsive */
+    max-width: 400px; /* Largeur maximale */
+    background-color: #000; /* Fond noir */
+    border-radius: 1rem; /* Coins arrondis */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style du titre */
+#formulaire-modifier h1 {
+    font-size: 24px; /* Taille de la police */
+    color: #000000; /* Couleur du texte blanche */
+    margin-bottom: 20px; /* Espace en bas du titre */
+    text-align: center; /* Centre le texte */
+    width: 100%; /* Largeur complète */
+    padding: 10px;
+    border: 1px solid #555; /* Bordure foncée */
+    border-radius: 0.5rem; /* Coins légèrement arrondis */
+    background-color: #fff; /* Fond sombre */
+    box-sizing: border-box;
+}
+
+/* Espacement et style des champs */
+#formulaire-modifier fieldset {
+    border: none;
+    margin-bottom: 15px;
+    width: 100%; /* Assure que le fieldset prend toute la largeur */
+}
+
+#formulaire-modifier div {
+    margin-bottom: 15px;
+    width: 100%; /* Les divs de champ remplissent la largeur */
+}
+
+
+#formulaire-modifier label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff; /* Couleur du texte blanche */
+}
+
+#formulaire-modifier input[type="text"],
+#formulaire-modifier input[type="file"] {
+    width: 100%; /* Largeur complète */
+    padding: 10px;
+    border: 1px solid #555; /* Bordure foncée */
+    border-radius: 0.5rem; /* Coins légèrement arrondis */
+    background-color: #fff; /* Fond sombre */
+    color: #000000; /* Texte noir */
+    box-sizing: border-box;
+}
+
+/* Style des boutons */
+.action {
+    display: block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 0.5rem; /* Coins arrondis */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%; /* Largeur complète */
+    text-align: center;
+}
+
+/* Bouton enregistrer */
+#enregistrer {
+    background-color: #fff; /* Vert */
+    color: #000000;
+}
+
+/* Bouton annuler */
+.action[href] {
+    background-color: #fff; /* Rouge */
+    color:#000000;
+}
+
+/* Hover des boutons */
+.action:hover {
+    opacity: 0.9;
+}
+

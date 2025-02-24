@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+.orange {
+  background-color: orange;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.tap-area {
+  user-select: none; /* Désactive la sélection du texte */
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+span {
+  font-size: 24px;
+  margin-left: 10px;
+}
