@@ -1,13 +1,15 @@
 class Application{
-    constructor(window, musiqueDAO, vueListeMusique, vueAjouterMusique){
+    constructor(window, musiqueDAO, vueListeMusique, vueAjouterMusique, vueModifierMusique){
         this.window = window;
         this.musiqueDAO = musiqueDAO;
         this.vueListeMusique = vueListeMusique;
+        this.vueModifierMusique = vueModifierMusique;
 
 
 
         this.vueAjouterMusique = vueAjouterMusique;
         this.vueAjouterMusique.initialiserActionAjouterMusique(musique =>this.actionAjouterMusique(musique));
+        this.vueModifierMusique.initialiserActionModifierArticle(musique =>this.actionModifierArticle(musique));
 
         this.window.addEventListener("hashchange", () => this.naviguer());
 
@@ -37,4 +39,4 @@ class Application{
         this.window.location.hash = "#";
     }
 }
-new Application(window, new MusiqueDAO(), new VueListeMusique(), new VueAjouterMusique());
+new Application(window, new MusiqueDAO(), new VueListeMusique(), new VueAjouterMusique(),  new VueModifierMusique());
