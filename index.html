@@ -111,7 +111,38 @@
     </div>
   </script>
 
-  <script type="plain/text" id="html-vue-modifier-musique"></script>
+  <script type="plain/text" id="html-vue-modifier-musique">
+  <div class="page">
+    <h1>Modifier une musique</h1>
+    <form id="formulaire-modifier">
+        <fieldset>
+            <legend>Musique</legend>
+            <div>
+                <label for="musique-nom">Nom</label>
+                <input type="text" id="musique-nom"/>
+            </div>
+            <div>
+                <label for="musique-album">Album</label>
+                <input type="text" id="musique-album"/>
+            </div>
+            <div>
+                <label for="musique-auteur">Auteur</label>
+                <input type="text" id="musique-auteur"/>
+            </div>
+            <div>
+                <label for="musique-duree">Durée</label>
+                <input type="text" id="musique-duree"/>
+            </div>
+            <div>
+                <label for="musique-type">Type de musique</label>
+                <input type="text" id="musique-type"/>
+            </div>
+        </fieldset>
+        <input class="action" type="submit" id="modifier" value="Modifier"/>
+    </form>
+    <a href="#" class="action">Annuler et revenir à la liste</a>
+</div>
+</script>
   <script src="js/gsap.js"></script>
 </body>
 </html>
