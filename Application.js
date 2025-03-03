@@ -5,8 +5,6 @@ class Application{
         this.vueListeMusique = vueListeMusique;
         this.vueModifierMusique = vueModifierMusique;
 
-
-
         this.vueAjouterMusique = vueAjouterMusique;
         this.vueAjouterMusique.initialiserActionAjouterMusique(musique =>this.actionAjouterMusique(musique));
         this.vueModifierMusique.initialiserActionModifierArticle(musique =>this.actionModifierArticle(musique));

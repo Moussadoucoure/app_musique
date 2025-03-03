@@ -51,7 +51,25 @@
         <br>
     </div>
 
-        <div id="music-list">
+    <ul id="music-item">
+      <li>
+        <h2><i class="fas fa-music"></i><a href="#">{Musique.nom}</a></h2>
+        <div class="controls">
+            <a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ" target="_blank">Écouter sur YouTube</a>
+            <a href="bohemian_rhapsody.mp3" download>Télécharger MP3</a>
+        </div>
+        <div class="info">
+            <strong>Artiste :</strong>{Musique.auteur} <br>
+            <strong>Genre :</strong>{Musique.type} <br>
+            <strong>Album :</strong>{Musique.album} <br>
+            <strong>Durée :</strong>{Musique.duree} <br>
+        </div>
+        <a href="#modifier.musique">Modifier</a>
+      </li>
+    </ul>
+
+
+       /* <div id="music-list">
             <!-- Musique 1 -->
             <ul id="music-item">
                 <div>
@@ -66,11 +84,11 @@
                         <li><strong>Album :</strong>{Musique.album}</li>
                         <li><strong>Duree:</strong>{Musique.duree}</li>
                     </div>
-                    <a href="modifier.html">modifier</a>
+                    <a href="#modifier.musique">modifier</a>
                 </div>
                </ul>
 
-        </div>
+        </div>*/
 
         <div class="im">
             <a href="#ajouter-musique">ajouter</a>
