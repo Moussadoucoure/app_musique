@@ -1,29 +1,29 @@
 body {
-    text-align:center;
-    margin:50px;
-    padding:50px;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
     background-color: #cccccc;
+    font-family: Arial, sans-serif; /* Optional, for consistent font style */
 }
 
-#page-ajouter{
-  border: none;
-  color: white;
-  padding: 15px 32px;
-
-  text-decoration: none;
-  font-size: 16px;
+#page-ajouter, #page-liste {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #4CAF50; /* Adding background color for buttons */
+    cursor: pointer; /* Adds a pointer cursor when hovering over the buttons */
+    border-radius: 5px; /* Optional: Adds rounded corners to the buttons */
+    transition: background-color 0.3s ease; /* Optional: smooth transition on hover */
 }
-#page-liste{
-  border: none;
-  color: white;
-  padding: 15px 32px;
 
-  text-decoration: none;
-  font-size: 16px;
+#page-ajouter:hover, #page-liste:hover {
+    background-color: #45a049; /* Darker shade when hovered */
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
 }
-
-
