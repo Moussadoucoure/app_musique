@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE HTML>
-<html>
+<html lang="fr">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Musique</title>
   <link rel="stylesheet" href="Css/accueil.css">
   <link rel="stylesheet" href="Css/liste.css">
@@ -17,20 +19,18 @@
   <script src="vue/VueModifierMusique.js"></script>
   <script defer type="text/javascript" src="js/image.js"></script>
   <script defer src="Application.js"></script>
-  <style></style>
-
 </head>
 <body>
   <div id="page-chargement-application">Bienvenu sur l'application de musique</div>
+
   <div id="page-liste">
     <a href="#"> <button type="button">Page liste</button></a>
     <a href="/POC geste/geste.html"> <button type="button">Page geste</button></a>
   </div>
 
-    <div id="page-ajouter">
-      <a href="#ajouter-musique">Page ajouter</a><br>
-    </div>
-
+  <div id="page-ajouter">
+    <a href="#ajouter-musique">Page ajouter</a><br>
+  </div>
 
   <div id="page-ajouter2">
     <a href="/POCimage/image.html">  <button type="button"> Page preuve de gestion de gesture</button></a><br>
@@ -40,64 +40,36 @@
     <a href="/testGsap/Liste.html">  <button type="button"> Page preuve de concept librairie graphique</button></a><br>
   </div>
 
-
- <script type="plain/text" id="html-vue-liste-musique">
- <div class="page">
-       <button id="takePictureBtn">Take Picture</button>
+  <script type="plain/text" id="html-vue-liste-musique">
+    <div class="page">
+      <button id="takePictureBtn">Take Picture</button>
       <img id="capturedImage" src="" alt="Captured Image" style="max-width:100%; height:auto; display:block;"/>
-    <h1>Liste des Musiques</h1>
-    <img src="image/musique.jpeg" alt="img">
-    <div>
-        <br>
-    </div>
-
-    <ul id="music-item">
-      <li>
-        <h2><i class="fas fa-music"></i><a href="#">{Musique.nom}</a></h2>
-        <div class="controls">
+      <h1>Liste des Musiques</h1>
+      <img src="image/musique.jpeg" alt="img">
+      <ul id="music-item">
+        <li>
+          <h2><i class="fas fa-music"></i><a href="#">{Musique.nom}</a></h2>
+          <div class="controls">
             <a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ" target="_blank">Écouter sur YouTube</a>
             <a href="bohemian_rhapsody.mp3" download>Télécharger MP3</a>
-        </div>
-        <div class="info">
+          </div>
+          <div class="info">
             <strong>Artiste :</strong>{Musique.auteur} <br>
             <strong>Genre :</strong>{Musique.type} <br>
             <strong>Album :</strong>{Musique.album} <br>
             <strong>Durée :</strong>{Musique.duree} <br>
-        </div>
-        <a href="#modifier.musique">Modifier</a>
-      </li>
-    </ul>
-
-
-       /* <div id="music-list">
-            <!-- Musique 1 -->
-            <ul id="music-item">
-                <div>
-                    <h2><i class="fas fa-music"></i><li><a href="">{Musique.nom}</a></li></h2>
-                    <div class="controls">
-                        <a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ" target="_blank">Écouter sur YouTube</a>
-                        <a href="bohemian_rhapsody.mp3" download>Télécharger MP3</a>
-                    </div>
-                    <div class="info">
-                        <li><strong>Artiste :</strong>{Musique.auteur}</li>
-                        <li><strong>Genre :</strong>{Musique.type}</li>
-                        <li><strong>Album :</strong>{Musique.album}</li>
-                        <li><strong>Duree:</strong>{Musique.duree}</li>
-                    </div>
-                    <a href="#modifier.musique">modifier</a>
-                </div>
-               </ul>
-
-        </div>*/
-
-        <div class="im">
-            <a href="#ajouter-musique">ajouter</a>
-        </div>
-        </div>
+          </div>
+          <a href="#modifier.musique">Modifier</a>
+        </li>
+      </ul>
+      <div class="im">
+        <a href="#ajouter-musique">ajouter</a>
+      </div>
+    </div>
   </script>
 
   <script type="plain/text" id="html-vue-ajouter-musique">
-        <div class="page">
+    <div class="page">
       <h1>Ajouter une musique à l'album</h1>
       <form id="formulaire-ajouter">
         <fieldset>
@@ -130,37 +102,37 @@
   </script>
 
   <script type="plain/text" id="html-vue-modifier-musique">
-  <div class="page">
-    <h1>Modifier une musique</h1>
-    <form id="formulaire-modifier">
+    <div class="page">
+      <h1>Modifier une musique</h1>
+      <form id="formulaire-modifier">
         <fieldset>
-            <legend>Musique</legend>
-            <div>
-                <label for="musique-nom">Nom</label>
-                <input type="text" id="musique-nom"/>
-            </div>
-            <div>
-                <label for="musique-album">Album</label>
-                <input type="text" id="musique-album"/>
-            </div>
-            <div>
-                <label for="musique-auteur">Auteur</label>
-                <input type="text" id="musique-auteur"/>
-            </div>
-            <div>
-                <label for="musique-duree">Durée</label>
-                <input type="text" id="musique-duree"/>
-            </div>
-            <div>
-                <label for="musique-type">Type de musique</label>
-                <input type="text" id="musique-type"/>
-            </div>
+          <legend>Musique</legend>
+          <div>
+            <label for="musique-nom">Nom</label>
+            <input type="text" id="musique-nom"/>
+          </div>
+          <div>
+            <label for="musique-album">Album</label>
+            <input type="text" id="musique-album"/>
+          </div>
+          <div>
+            <label for="musique-auteur">Auteur</label>
+            <input type="text" id="musique-auteur"/>
+          </div>
+          <div>
+            <label for="musique-duree">Durée</label>
+            <input type="text" id="musique-duree"/>
+          </div>
+          <div>
+            <label for="musique-type">Type de musique</label>
+            <input type="text" id="musique-type"/>
+          </div>
         </fieldset>
         <input class="action" type="submit" id="modifier" value="Modifier"/>
-    </form>
-    <a href="#" class="action">Annuler et revenir à la liste</a>
-</div>
-</script>
+      </form>
+      <a href="#" class="action">Annuler et revenir à la liste</a>
+    </div>
+  </script>
   <script src="js/gsap.js"></script>
 </body>
 </html>
